@@ -176,9 +176,9 @@
             },
 
             selectOrUnselectTask: function () {
-                
+
                 var taskIndex = $(event.target).attr("data-index");
-                
+
                 if ($(event.target).attr('data-task-selected') == 'false') {
                     $(event.target).attr('data-task-selected', true);
                     this.selectTaskEvent.notify({
@@ -340,12 +340,17 @@
         <!-- end tasks -->
         <input type="button" class="js-complete-task-button" value="Complete Tasks">
         <input type="button" class="js-delete-task-button" value="Delete Tasks">
-        
+
     </div>
     <!-- end js-container -->
 
 
 
+    <script src="EventDispatcher.js"></script>
+    <script src="TaskModel.js"></script>
+    <script src="TaskView.js"></script>
+    <script src="TaskController.js"></script>
+    <script src="App.js"></script>
 
 </body>
 
