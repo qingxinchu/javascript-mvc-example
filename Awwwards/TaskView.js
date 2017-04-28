@@ -15,6 +15,8 @@ TaskView.prototype = {
         this.createChildren()
             .setupHandlers()
             .enable();
+
+            console.log("TaskView init");
     },
 
     createChildren: function () {
